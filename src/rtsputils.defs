@@ -1,0 +1,23 @@
+;; -*- scheme -*-
+; object definitions ...
+(define-object CamMediaFactory
+  (in-module "Gst")
+  (parent "GstRTSPMediaFactory")
+  (c-name "GstRTSPCamMediaFactory")
+  (gtype-id "GST_TYPE_RTSP_CAM_MEDIA_FACTORY")
+)
+
+;; Enumerations and flags ...
+
+
+;; From gst-rtsp-cam-media-factory.h
+
+(define-function gst_rtsp_cam_media_factory_new
+  (c-name "gst_rtsp_cam_media_factory_new")
+  (is-constructor-of "GstRtspCamMediaFactory")
+  (return-type "GstRTSPCamMediaFactory*")
+  (parameters
+  )
+)
+
+
