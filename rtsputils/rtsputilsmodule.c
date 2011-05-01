@@ -11,13 +11,13 @@ void pygst_rtsp_utils_register_classes(PyObject *d);
 extern PyMethodDef pygst_rtsp_utils_functions[];
 
 DL_EXPORT(void)
-initrtsputils(void)
+init_rtsputils(void)
 {
     PyObject *m, *d;
 
     /* perform any initialisation required by the library here */
 
-    m = Py_InitModule("rtsputils", pygst_rtsp_utils_functions);
+    m = Py_InitModule("_rtsputils", pygst_rtsp_utils_functions);
     d = PyModule_GetDict(m);
 
     init_pygobject();

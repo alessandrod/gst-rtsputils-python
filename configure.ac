@@ -31,7 +31,7 @@ AC_SUBST(GST_MAJORMINOR)
 AC_SUBST(PYGST_DEFSDIR, $PYGST_DEFSDIR)
 AC_CONFIG_FILES(
 Makefile
-src/Makefile
-src/codegen/Makefile
+rtsputils/Makefile
+rtsputils/codegen/Makefile
 )
 AC_OUTPUT
