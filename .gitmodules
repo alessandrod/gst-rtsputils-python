@@ -1,0 +1,3 @@
+[submodule "gst-rtsp-cam"]
+	path = gst-rtsp-cam
+	url = git://github.com/alessandrod/gst-rtsp-cam.git
