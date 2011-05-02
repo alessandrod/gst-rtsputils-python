@@ -7,6 +7,14 @@
   (gtype-id "GST_TYPE_RTSP_CAM_MEDIA_FACTORY")
 )
 
+(define-object RelayMediaFactory
+  (in-module "Gst")
+  (parent "GstRTSPMediaFactory")
+  (c-name "GstRTSPRelayMediaFactory")
+  (gtype-id "GST_TYPE_RTSP_RELAY_MEDIA_FACTORY")
+)
+
+
 ;; Enumerations and flags ...
 
 
@@ -16,7 +24,14 @@
   (c-name "gst_rtsp_cam_media_factory_new")
   (is-constructor-of "GstRtspCamMediaFactory")
   (return-type "GstRTSPCamMediaFactory*")
-  (parameters
+)
+
+(define-function gst_rtsp_relay_media_factory_new
+  (c-name "gst_rtsp_relay_media_factory_new")
+  (is-constructor-of "GstRtspRelayMediaFactory")
+  (return-type "GstRTSPRelayMediaFactory*")
+  (properties
+    '("url" (argname "str") (optional))
   )
 )
 

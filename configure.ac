@@ -35,5 +35,7 @@ rtsputils/Makefile
 rtsputils/codegen/Makefile
 gst-rtsp-cam/Makefile
 gst-rtsp-cam/src/Makefile
+gst-rtsp-relay/Makefile
+gst-rtsp-relay/src/Makefile
 )
 AC_OUTPUT

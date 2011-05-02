@@ -18,14 +18,16 @@ INCLUDES = -I$(top_srcdir) -I$(srcdir) $(PYTHON_INCLUDES)
 
 _rtsputils_la_CFLAGS = -I$(top_srcdir)/src \
 		$(PYGOBJECT_CFLAGS) $(GST_PLUGINS_BASE_CFLAGS) $(GST_CFLAGS) \
-		-I$(top_srcdir)/gst-rtsp-cam/src
+		-I$(top_srcdir)/gst-rtsp-cam/src \
+		-I$(top_srcdir)/gst-rtsp-relay/src
 _rtsputils_la_LDFLAGS = -export-symbols-regex "^(init_rtsputils|_PyGObject_API).*" \
 	-module -avoid-version $(GST_PLUGIN_LDFLAGS)
 _rtsputils_la_LIBADD = \
 		$(GST_PLUGINS_BASE_LIBS) $(GST_BASE_LIBS) \
 		-lgstrtp-@GST_MAJORMINOR@ -lgstrtsp-@GST_MAJORMINOR@ \
         	-lgstsdp-@GST_MAJORMINOR@ $(GST_LIBS) $(LIBM) \
-		$(top_srcdir)/gst-rtsp-cam/src/libgstrtspcam.la
+		$(top_srcdir)/gst-rtsp-cam/src/libgstrtspcam.la \
+		$(top_srcdir)/gst-rtsp-relay/src/libgstrtsprelay.la
 _rtsputils_la_SOURCES = rtsputilsmodule.c 
 nodist__rtsputils_la_SOURCES = rtsputils.c
 
