@@ -1,1 +1,1 @@
-SUBDIRS = rtsputils
+SUBDIRS =  gst-rtsp-cam rtsputils

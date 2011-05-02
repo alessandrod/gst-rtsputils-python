@@ -33,5 +33,7 @@ AC_CONFIG_FILES(
 Makefile
 rtsputils/Makefile
 rtsputils/codegen/Makefile
+gst-rtsp-cam/Makefile
+gst-rtsp-cam/src/Makefile
 )
 AC_OUTPUT
