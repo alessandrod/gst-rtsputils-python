@@ -27,7 +27,8 @@ _rtsputils_la_LIBADD = \
 		-lgstrtp-@GST_MAJORMINOR@ -lgstrtsp-@GST_MAJORMINOR@ \
         	-lgstsdp-@GST_MAJORMINOR@ $(GST_LIBS) $(LIBM) \
 		$(top_srcdir)/gst-rtsp-cam/src/libgstrtspcam.la \
-		$(top_srcdir)/gst-rtsp-relay/src/libgstrtsprelay.la
+		$(top_srcdir)/gst-rtsp-relay/src/libgstrtsprelay.la \
+		-lgstrtspserver-0.10
 _rtsputils_la_SOURCES = rtsputilsmodule.c 
 nodist__rtsputils_la_SOURCES = rtsputils.c
 
