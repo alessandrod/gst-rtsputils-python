@@ -1,4 +1,5 @@
 #!/bin/sh
 
 git submodule init && git submodule update
-exec autoreconf -i
+autoreconf -i
+./configure
